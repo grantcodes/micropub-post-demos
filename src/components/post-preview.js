@@ -1,6 +1,8 @@
 import React from 'react'
 import { renderToStaticMarkup } from 'react-dom/server'
-import Link from 'gatsby-link'
+import SyntaxHighlighter from 'react-syntax-highlighter'
+import { atomOneDark as syntaxStyle } from 'react-syntax-highlighter/styles/hljs'
+import pretty from 'pretty'
 import Post from '../components/post'
 
 import jf2ToMf2 from '../modules/jf2-to-mf2'
@@ -19,19 +21,25 @@ const PostPreview = ({ post }) => (
       <summary>
         <h4>JF2 JSON</h4>
       </summary>
-      <pre>{JSON.stringify(post, null, 2)}</pre>
+      <SyntaxHighlighter language="json" style={syntaxStyle}>
+        {JSON.stringify(post, null, 2)}
+      </SyntaxHighlighter>
     </details>
     <details>
       <summary>
         <h4>MF2 JSON</h4>
       </summary>
-      <pre>{JSON.stringify(jf2ToMf2(post), null, 2)}</pre>
+      <SyntaxHighlighter language="json" style={syntaxStyle}>
+        {JSON.stringify(jf2ToMf2(post), null, 2)}
+      </SyntaxHighlighter>
     </details>
     <details>
       <summary>
         <h4>HTML</h4>
       </summary>
-      <pre>{renderToStaticMarkup(<Post post={jf2ToMf2(post)} />)}</pre>
+      <SyntaxHighlighter language="html" style={syntaxStyle}>
+        {pretty(renderToStaticMarkup(<Post post={jf2ToMf2(post)} />))}
+      </SyntaxHighlighter>
     </details>
     <details>
       <summary>
