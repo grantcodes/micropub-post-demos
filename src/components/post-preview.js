@@ -1,4 +1,5 @@
 import React from 'react'
+import { renderToStaticMarkup } from 'react-dom/server'
 import Link from 'gatsby-link'
 import Post from '../components/post'
 
@@ -25,6 +26,12 @@ const PostPreview = ({ post }) => (
         <h4>MF2 JSON</h4>
       </summary>
       <pre>{JSON.stringify(jf2ToMf2(post), null, 2)}</pre>
+    </details>
+    <details>
+      <summary>
+        <h4>HTML</h4>
+      </summary>
+      <pre>{renderToStaticMarkup(<Post post={jf2ToMf2(post)} />)}</pre>
     </details>
     <details>
       <summary>
