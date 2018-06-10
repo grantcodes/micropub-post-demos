@@ -17,16 +17,33 @@ const Post = ({ post }) => {
   } else if (content) {
     content = <p className="e-content">{content}</p>
   }
+
+  const property = (name, El) => {
+    if (post.properties[name]) {
+      return post.properties[name].map(value => <El value={value} />)
+    }
+    return null
+  }
+
   return (
     <article className="h-entry">
       <header>
-        {post.properties.name && (
-          <h1 className="p-name">{post.properties.name}</h1>
-        )}
+        {property('name', ({ value }) => <h1 className="p-name">{value}</h1>)}
       </header>
       {post.properties.photo &&
         post.properties.photo.map(photo => <img src={photo} />)}
+      {post.properties.video &&
+        post.properties.video.map(video => <video src={video} controls />)}
+      {post.properties.audio &&
+        post.properties.audio.map(audio => <audio src={audio} controls />)}
+
       {content}
+
+      {property('like-of', ({ value }) => <a href={value}>Like Of</a>)}
+      {property('bookmark-of', ({ value }) => <a href={value}>Bookmark Of</a>)}
+      {property('repost-of', ({ value }) => <a href={value}>Repost Of</a>)}
+      {property('in-reply-to', ({ value }) => <a href={value}>Replied To</a>)}
+
       <footer>
         {post.properties.category && (
           <ul
