@@ -45,7 +45,9 @@ const PostPreview = ({ post }) => (
       <summary>
         <h4>Rendered Post</h4>
       </summary>
-      <Post post={jf2ToMf2(post)} />
+      <div className="rendered-post">
+        <Post post={jf2ToMf2(post)} />
+      </div>
     </details>
   </div>
 )
