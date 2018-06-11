@@ -26,7 +26,7 @@ const Post = ({ post }) => {
   }
 
   return (
-    <article className="h-entry">
+    <article className={post.type ? post.type[0] : 'h-entry'}>
       <header>
         {property('name', ({ value }) => <h1 className="p-name">{value}</h1>)}
       </header>
