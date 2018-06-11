@@ -41,7 +41,7 @@ const PostPreview = ({ post }) => (
         {pretty(renderToStaticMarkup(<Post post={jf2ToMf2(post)} />))}
       </SyntaxHighlighter>
     </details>
-    <details>
+    <details open>
       <summary>
         <h4>Rendered Post</h4>
       </summary>

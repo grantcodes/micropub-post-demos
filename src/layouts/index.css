@@ -804,10 +804,63 @@ pre tt:after {
   color: darkslateblue;
 }
 
+/* Styles for the rendered posts */
 .rendered-post {
   margin-top: 2em;
-  padding: 1em;
+  padding: 1rem;
   background-color: white;
-  border-radius: .1em;
+  border-radius: .2em;
   box-shadow: 0 0 .5em rgba(0,0,0,.1);
+}
+
+.rendered-post header:empty {
+  display: none;
+}
+
+/* Full width items */
+.rendered-post .u-photo,
+.rendered-post .u-video {
+  display: block;
+  margin: 0 -1rem;
+  width: calc(100% + 2rem);
+  max-width: calc(100% + 2rem);
+}
+
+.rendered-post div.e-content {
+  margin-top: 1em;
+}
+
+.rendered-post .u-audio {
+  width: 100%;
+}
+
+.rendered-post footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  font-size: 0.8em;
+  color: #666;
+  border-top: 1px solid rgba(0,0,0,.1)
+}
+.rendered-post footer:empty {
+  display: none;
+}
+
+.rendered-post footer ul {
+  display: inline-block;
+  margin: 0 .5em 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.rendered-post footer ul > li {
+  display: inline-block;
+  margin: 0 .2em 0 0;
+}
+
+.rendered-post footer .p-category:before {
+  content: "#"
+}
+
+.rendered-post footer time {
+  margin-right: 0.5em;
 }
