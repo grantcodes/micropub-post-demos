@@ -1,0 +1,8 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "name": ["Article with photo"],
+    "content": ["Isn't this neat"],
+    "photo": ["https://placeimg.com/500/200"]
+  }
+}

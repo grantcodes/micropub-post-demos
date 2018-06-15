@@ -1,0 +1,7 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "content": "Video note",
+    "video": ["http://a/vidjo.mov"]
+  }
+}

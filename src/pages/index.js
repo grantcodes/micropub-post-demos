@@ -3,19 +3,31 @@ import Link from 'gatsby-link'
 import PostPreview from '../components/post-preview'
 
 const IndexPage = props => {
-  const posts = props.data.allJf2Post.edges.map(edge =>
-    JSON.parse(edge.node.json)
+  const posts = props.data.allMf2Post.edges.map(edge => ({
+    name: edge.node.name,
+    mf2: JSON.parse(edge.node.json),
+  }))
+  return (
+    <div>
+      {posts.map((post, i) => (
+        <PostPreview
+          title={post.name}
+          post={post.mf2}
+          key={'post-preview-' + i}
+        />
+      ))}
+    </div>
   )
-  return <div>{posts.map(post => <PostPreview post={post} />)}</div>
 }
 
 export default IndexPage
 
 export const query = graphql`
-  query Jf2PostQuery {
-    allJf2Post {
+  query Mf2PostQuery {
+    allMf2Post {
       edges {
         node {
+          name
           json
         }
       }

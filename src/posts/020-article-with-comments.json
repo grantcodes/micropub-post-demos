@@ -1,0 +1,37 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "name": ["Check out the comments"],
+    "content": ["This is a post with comments"],
+    "comment": [
+      {
+        "type": ["h-cite"],
+        "properties": {
+          "author": [
+            {
+              "type": ["h-card"],
+              "properties": {
+                "name": ["Alice"],
+                "url": ["https://placeimg.com/50/50/people"]
+              }
+            }
+          ],
+          "content": [{ "value": "I concur.", "html": "I concur." }]
+        }
+      },
+      {
+        "type": ["h-cite"],
+        "properties": {
+          "url": ["http://example.com/comment/2"],
+          "name": ["second comment name"],
+          "content": [
+            {
+              "value": "And I, as well, in addition. Too.",
+              "html": "And I, as well, in addition. Too."
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

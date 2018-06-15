@@ -1,0 +1,6 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "content": ["This is a basic note"]
+  }
+}

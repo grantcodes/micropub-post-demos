@@ -1,0 +1,17 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "url": ["http://example.com/this/rsvp"],
+    "in-reply-to": ["http://example.com/event"],
+    "rsvp": ["yes"],
+    "author": [
+      {
+        "type": ["h-card"],
+        "properties": {
+          "name": ["Alice"],
+          "url": ["http://example.com/alice"]
+        }
+      }
+    ]
+  }
+}

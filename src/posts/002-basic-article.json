@@ -1,0 +1,12 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "name": ["This is an article"],
+    "content": [
+      {
+        "html": "<p>With <code>HTML</code> content :)</p>",
+        "value": "With HTML content"
+      }
+    ]
+  }
+}

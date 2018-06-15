@@ -1,0 +1,33 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "name": ["article abc"],
+    "content": [{
+      "value": "foo bar",
+      "html": "foo bar"
+    }],
+    "url": ["http://example.com/abc"],
+    "like": [{
+      "type": ["h-cite"],
+      "properties": {
+        "author": [{
+          "type": ["h-card"],
+          "properties": {
+            "numeric-id": ["100004"],
+            "name": ["Alice"],
+            "url": ["http://example.com/alice"]
+          }
+        }],
+        "content": [{"html": "<a href=\"http://example.com/abc\">likes this.</a>"}],
+        "like-of": ["http://example.com/abc"]
+      }
+    }, {
+      "type": ["h-cite"],
+      "properties": {
+        "url": ["http://example.com/anonymous/like"],
+        "content": [{"html": "<a href=\"http://example.com/abc\">likes this.</a>"}],
+        "like-of": ["http://example.com/abc"]
+      }
+    }]
+  }
+}

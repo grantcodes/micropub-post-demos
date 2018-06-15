@@ -1,0 +1,24 @@
+{
+  "type" : ["h-entry"],
+  "properties" : {
+    "repost-of" : [
+      "http://example.com/bare-repost",
+      {
+        "type" : ["h-cite"],
+        "value" : "Author\nRepost content inside h-cite",
+        "properties" : {
+          "url" : ["http://example.com/embedded-repost"],
+          "name" : ["Author"],
+          "content" : [{
+            "html": "Repost inside h-cite",
+            "value": "Repost inside h-cite"
+          }]
+        }
+      }
+    ],
+    "content" : [{
+        "html" : "This is the main content.",
+        "value" : "This is the main content."
+      }]
+  }
+}

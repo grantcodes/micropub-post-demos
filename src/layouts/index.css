@@ -1,57 +1,77 @@
 @font-face {
-	font-family: system-ui;
-	font-style: normal;
-	font-weight: 300;
-	src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Segoe UI Light"), local("Ubuntu Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 300;
+  src: local('.SFNSText-Light'), local('.HelveticaNeueDeskInterface-Light'),
+    local('.LucidaGrandeUI'), local('Segoe UI Light'), local('Ubuntu Light'),
+    local('Roboto-Light'), local('DroidSans'), local('Tahoma');
 }
 
 @font-face {
-	font-family: system-ui;
-	font-style: italic;
-	font-weight: 300;
-	src: local(".SFNSText-LightItalic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Light Italic"), local("Ubuntu Light Italic"), local("Roboto-LightItalic"), local("DroidSans"), local("Tahoma");
+  font-family: system-ui;
+  font-style: italic;
+  font-weight: 300;
+  src: local('.SFNSText-LightItalic'),
+    local('.HelveticaNeueDeskInterface-Italic'), local('.LucidaGrandeUI'),
+    local('Segoe UI Light Italic'), local('Ubuntu Light Italic'),
+    local('Roboto-LightItalic'), local('DroidSans'), local('Tahoma');
 }
 
 @font-face {
-	font-family: system-ui;
-	font-style: normal;
-	font-weight: 400;
-	src: local(".SFNSText-Regular"), local(".HelveticaNeueDeskInterface-Regular"), local(".LucidaGrandeUI"), local("Segoe UI"), local("Ubuntu"), local("Roboto-Regular"), local("DroidSans"), local("Tahoma");
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 400;
+  src: local('.SFNSText-Regular'), local('.HelveticaNeueDeskInterface-Regular'),
+    local('.LucidaGrandeUI'), local('Segoe UI'), local('Ubuntu'),
+    local('Roboto-Regular'), local('DroidSans'), local('Tahoma');
 }
 
 @font-face {
-	font-family: system-ui;
-	font-style: italic;
-	font-weight: 400;
-	src: local(".SFNSText-Italic"), local(".HelveticaNeueDeskInterface-Italic"), local(".LucidaGrandeUI"), local("Segoe UI Italic"), local("Ubuntu Italic"), local("Roboto-Italic"), local("DroidSans"), local("Tahoma");
+  font-family: system-ui;
+  font-style: italic;
+  font-weight: 400;
+  src: local('.SFNSText-Italic'), local('.HelveticaNeueDeskInterface-Italic'),
+    local('.LucidaGrandeUI'), local('Segoe UI Italic'), local('Ubuntu Italic'),
+    local('Roboto-Italic'), local('DroidSans'), local('Tahoma');
 }
 
 @font-face {
-	font-family: system-ui;
-	font-style: normal;
-	font-weight: 500;
-	src: local(".SFNSText-Medium"), local(".HelveticaNeueDeskInterface-MediumP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold"), local("Ubuntu Medium"), local("Roboto-Medium"), local("DroidSans-Bold"), local("Tahoma Bold");
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 500;
+  src: local('.SFNSText-Medium'), local('.HelveticaNeueDeskInterface-MediumP4'),
+    local('.LucidaGrandeUI'), local('Segoe UI Semibold'), local('Ubuntu Medium'),
+    local('Roboto-Medium'), local('DroidSans-Bold'), local('Tahoma Bold');
 }
 
 @font-face {
-	font-family: system-ui;
-	font-style: italic;
-	font-weight: 500;
-	src: local(".SFNSText-MediumItalic"), local(".HelveticaNeueDeskInterface-MediumItalicP4"), local(".LucidaGrandeUI"), local("Segoe UI Semibold Italic"), local("Ubuntu Medium Italic"), local("Roboto-MediumItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+  font-family: system-ui;
+  font-style: italic;
+  font-weight: 500;
+  src: local('.SFNSText-MediumItalic'),
+    local('.HelveticaNeueDeskInterface-MediumItalicP4'),
+    local('.LucidaGrandeUI'), local('Segoe UI Semibold Italic'),
+    local('Ubuntu Medium Italic'), local('Roboto-MediumItalic'),
+    local('DroidSans-Bold'), local('Tahoma Bold');
 }
 
 @font-face {
-	font-family: system-ui;
-	font-style: normal;
-	font-weight: 700;
-	src: local(".SFNSText-Bold"), local(".HelveticaNeueDeskInterface-Bold"), local(".LucidaGrandeUI"), local("Segoe UI Bold"), local("Ubuntu Bold"), local("Roboto-Bold"), local("DroidSans-Bold"), local("Tahoma Bold");
+  font-family: system-ui;
+  font-style: normal;
+  font-weight: 700;
+  src: local('.SFNSText-Bold'), local('.HelveticaNeueDeskInterface-Bold'),
+    local('.LucidaGrandeUI'), local('Segoe UI Bold'), local('Ubuntu Bold'),
+    local('Roboto-Bold'), local('DroidSans-Bold'), local('Tahoma Bold');
 }
 
 @font-face {
-	font-family: system-ui;
-	font-style: italic;
-	font-weight: 700;
-	src: local(".SFNSText-BoldItalic"), local(".HelveticaNeueDeskInterface-BoldItalic"), local(".LucidaGrandeUI"), local("Segoe UI Bold Italic"), local("Ubuntu Bold Italic"), local("Roboto-BoldItalic"), local("DroidSans-Bold"), local("Tahoma Bold");
+  font-family: system-ui;
+  font-style: italic;
+  font-weight: 700;
+  src: local('.SFNSText-BoldItalic'),
+    local('.HelveticaNeueDeskInterface-BoldItalic'), local('.LucidaGrandeUI'),
+    local('Segoe UI Bold Italic'), local('Ubuntu Bold Italic'),
+    local('Roboto-BoldItalic'), local('DroidSans-Bold'), local('Tahoma Bold');
 }
 
 html {
@@ -128,7 +148,7 @@ dfn {
 
 h1 {
   font-size: 2em;
-  margin: .67em 0;
+  margin: 0.67em 0;
 }
 
 mark {
@@ -148,10 +168,10 @@ sup {
   vertical-align: baseline;
 }
 sub {
-  bottom: -.25em;
+  bottom: -0.25em;
 }
 sup {
-  top: -.5em;
+  top: -0.5em;
 }
 
 img {
@@ -203,24 +223,24 @@ select {
   text-transform: none;
 }
 
-[type=reset],
-[type=submit],
+[type='reset'],
+[type='submit'],
 button,
-html [type=button] {
+html [type='button'] {
   -webkit-appearance: button;
 }
 
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner,
+[type='button']::-moz-focus-inner,
+[type='reset']::-moz-focus-inner,
+[type='submit']::-moz-focus-inner,
 button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-[type=button]:-moz-focusring,
-[type=reset]:-moz-focusring,
-[type=submit]:-moz-focusring,
+[type='button']:-moz-focusring,
+[type='reset']:-moz-focusring,
+[type='submit']:-moz-focusring,
 button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
@@ -228,7 +248,7 @@ button:-moz-focusring {
 fieldset {
   border: 1px solid silver;
   margin: 0 2px;
-  padding: .35em .625em .75em;
+  padding: 0.35em 0.625em 0.75em;
 }
 
 legend {
@@ -244,30 +264,30 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox],
-[type=radio] {
+[type='checkbox'],
+[type='radio'] {
   box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
+[type='number']::-webkit-inner-spin-button,
+[type='number']::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type=search] {
+[type='search'] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-cancel-button,
-[type=search]::-webkit-search-decoration {
+[type='search']::-webkit-search-cancel-button,
+[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 ::-webkit-input-placeholder {
   color: inherit;
-  opacity: .54;
+  opacity: 0.54;
 }
 
 ::-webkit-file-upload-button {
@@ -298,10 +318,10 @@ body {
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
+  -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -ms-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
+  font-feature-settings: 'kern', 'liga', 'clig', 'calt';
 }
 
 img {
@@ -701,10 +721,10 @@ td,
 th {
   text-align: left;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
-  font-feature-settings: "tnum";
-  -moz-font-feature-settings: "tnum";
-  -ms-font-feature-settings: "tnum";
-  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: 'tnum';
+  -moz-font-feature-settings: 'tnum';
+  -ms-font-feature-settings: 'tnum';
+  -webkit-font-feature-settings: 'tnum';
   padding-left: 0.96667rem;
   padding-right: 0.96667rem;
   padding-top: 0.725rem;
@@ -725,8 +745,8 @@ tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
+  font-family: 'SFMono-Regular', Consolas, 'Roboto Mono', 'Droid Sans Mono',
+    'Liberation Mono', Menlo, Courier, monospace;
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -742,14 +762,14 @@ code:after,
 tt:before,
 tt:after {
   letter-spacing: -0.2em;
-  content: " ";
+  content: ' ';
 }
 
 pre code:before,
 pre code:after,
 pre tt:before,
 pre tt:after {
-  content: "";
+  content: '';
 }
 
 @media only screen and (max-width: 480px) {
@@ -759,7 +779,7 @@ pre tt:after {
 }
 
 .post-preview > details {
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
 }
 
 .post-preview > details > summary {
@@ -768,31 +788,30 @@ pre tt:after {
   cursor: pointer;
 }
 
-
 .post-preview > details > summary::-webkit-details-marker {
-  display: none
+  display: none;
 }
 .post-preview > details > summary:before {
-  background:rgba(0,0,0,.6);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 50%;
-  content: "➕";
+  content: '➕';
   color: #fff;
-  font-size: .9em;
+  font-size: 0.9em;
   line-height: 1em;
   display: inline-block;
   width: 2em;
   height: 2em;
   font-weight: bold;
-  padding: .5em 0;
+  padding: 0.5em 0;
   margin-right: 0.7em;
   text-align: center;
   vertical-align: middle;
 }
-.post-preview > details >summary:hover:before {
+.post-preview > details > summary:hover:before {
   background-color: slateblue;
 }
 .post-preview > details[open] > summary:before {
-  content: "➖";
+  content: '➖';
 }
 
 .post-preview > details > summary h4 {
@@ -809,8 +828,9 @@ pre tt:after {
   margin-top: 2em;
   padding: 1rem;
   background-color: white;
-  border-radius: .2em;
-  box-shadow: 0 0 .5em rgba(0,0,0,.1);
+  border-radius: 0.2em;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .rendered-post header:empty {
@@ -818,6 +838,7 @@ pre tt:after {
 }
 
 /* Full width items */
+.rendered-post .u-featured,
 .rendered-post .u-photo,
 .rendered-post .u-video {
   display: block;
@@ -826,8 +847,30 @@ pre tt:after {
   max-width: calc(100% + 2rem);
 }
 
-.rendered-post div.e-content {
-  margin-top: 1em;
+/* Certain elements should be moved up to remove top padding */
+.rendered-post header > .u-featured:first-child,
+.rendered-post header:empty + .u-video,
+.rendered-post header:empty + .u-photo {
+  margin-top: -1rem;
+}
+
+/* Certain elements should remove bottom padding too */
+
+.rendered-post h1.p-name {
+  margin: 1rem 0;
+}
+.rendered-post h1.p-name:first-child {
+  margin-top: 0;
+}
+
+.rendered-post .e-content {
+  margin: 1rem 0 0 0;
+}
+.rendered-post header:empty + .e-content {
+  margin-top: 0;
+}
+.rendered-post .e-content p:last-child {
+  margin-bottom: 0;
 }
 
 .rendered-post .u-audio {
@@ -839,28 +882,85 @@ pre tt:after {
   padding-top: 1rem;
   font-size: 0.8em;
   color: #666;
-  border-top: 1px solid rgba(0,0,0,.1)
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 .rendered-post footer:empty {
   display: none;
 }
 
+.rendered-post footer .h-card {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.rendered-post footer .h-card .u-photo {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  margin: 0 0.2em 0 0;
+  vertical-align: middle;
+}
+
+.rendered-post footer .h-card .p-name {
+  display: inline-block;
+}
+
 .rendered-post footer ul {
   display: inline-block;
-  margin: 0 .5em 0 0;
+  margin: 0 0.5em 0 0;
   padding: 0;
   list-style: none;
 }
 
 .rendered-post footer ul > li {
   display: inline-block;
-  margin: 0 .2em 0 0;
+  margin: 0 0.2em 0 0;
 }
 
 .rendered-post footer .p-category:before {
-  content: "#"
+  content: '#';
 }
 
 .rendered-post footer time {
   margin-right: 0.5em;
+}
+
+/* Probably comments or likes or something */
+.rendered-post footer ~ div {
+  margin-top: 2rem;
+}
+
+/* Facepiles */
+.rendered-post .p-like,
+.rendered-post .p-repost {
+  display: inline-block;
+  position: relative;
+  width: 3em;
+  height: 3em;
+  margin: .2em .2em .2em 0;
+}
+
+.rendered-post .p-like .u-photo,
+.rendered-post .p-repost .u-photo {
+  display: block;
+  margin: 0;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.rendered-post .p-repost:before,
+.rendered-post .p-like:before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.rendered-post .p-repost:before {
+  content: '🔁';
+}
+.rendered-post .p-like:before {
+  content: '👍';
 }

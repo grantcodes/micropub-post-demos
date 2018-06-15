@@ -1,0 +1,6 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "like-of": ["https://example.com"]
+  }
+}

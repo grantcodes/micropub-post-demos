@@ -1,0 +1,28 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "url": ["http://example.com/abc"],
+    "repost": [{
+      "type": ["h-cite"],
+      "properties": {
+        "author": [{
+          "type": ["h-card"],
+          "properties": {
+            "numeric-id": ["100004"],
+            "name": ["Alice"],
+            "url": ["http://example.com/alice"]
+          }
+        }],
+        "content": [{"html": "<a href=\"http://example.com/abc\">shared this.</a>"}],
+        "repost-of": ["http://example.com/abc"]
+      }
+    }, {
+      "type": ["h-cite"],
+      "properties": {
+        "url": ["http://example.com/anonymous/repost"],
+        "content": [{"html": "<a href=\"http://example.com/abc\">shared this.</a>"}],
+        "repost-of": ["http://example.com/abc"]
+      }
+    }]
+  }
+}

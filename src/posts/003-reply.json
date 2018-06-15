@@ -1,0 +1,7 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "in-reply-to": ["https://example.com"],
+    "content": ["Wow look at this reply to https://example.com"]
+  }
+}

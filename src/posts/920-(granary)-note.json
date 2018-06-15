@@ -1,0 +1,42 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "summary": ["too cool to summarize"],
+    "url": [
+      "http://example.com/blog-post-123",
+      "http://orig/1",
+      "http://orig/2"
+    ],
+    "published": ["2012-02-22T20:26:41"],
+    "updated": ["2013-10-25T10:31:30+00:00"],
+    "content": [
+      {
+        "value": "A note. link too",
+        "html": "A note. <a href=\"http://my/link\">link</a> too"
+      }
+    ],
+    "photo": ["https://placeimg.com/400/400"],
+
+    "author": [
+      {
+        "type": ["h-card"],
+        "properties": {
+          "name": ["Ryan Barrett"],
+          "photo": ["https://placeimg.com/50/50/people"]
+        }
+      }
+    ],
+
+    "location": [
+      {
+        "type": ["h-card", "p-location"],
+        "properties": {
+          "name": ["Carcassonne, Aude"],
+          "url": ["https://maps.google.com/maps?q=32.4004416,-98.9852672"],
+          "latitude": ["50.820641"],
+          "longitude": ["-0.149522"]
+        }
+      }
+    ]
+  }
+}

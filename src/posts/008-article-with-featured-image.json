@@ -1,0 +1,8 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "name": ["Article Title"],
+    "content": ["An article with a featured image"],
+    "featured": ["https://placeimg.com/500/300"]
+  }
+}
