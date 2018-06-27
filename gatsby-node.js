@@ -47,7 +47,7 @@ exports.sourceNodes = async ({ boundActionCreators }) => {
     const contents = fs.readFileSync(`${__dirname}/src/posts/${filename}`)
     posts.push({
       name: filename
-        .replace('-', ' ')
+        .replace(/-/g, ' ')
         .slice(4)
         .slice(0, -5),
       json: contents.toString(),
