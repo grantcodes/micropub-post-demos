@@ -8,16 +8,12 @@ import Post from '../components/post/index'
 // import jf2ToMf2 from '../modules/jf2-to-mf2'
 
 const PostPreview = ({ post, title }) => (
-  <div
-    className="post-preview"
-    style={{
-      display: 'block',
-      marginBottom: '3em',
-      paddingBottom: '3em',
-      borderBottom: '1px solid #444',
-    }}
-  >
-    {title && <h2 style={{ textTransform: 'capitalize' }}>{title}</h2>}
+  <div id={title} className="post-preview">
+    {title && (
+      <h2 className="post-preview__title">
+        <a href={'#' + title}>🔗</a> {title}
+      </h2>
+    )}
     <details open>
       <summary>
         <h4>Rendered Post</h4>
@@ -47,7 +43,11 @@ const PostPreview = ({ post, title }) => (
         <h4>HTML</h4>
       </summary>
       <SyntaxHighlighter language="html" style={syntaxStyle}>
-        {pretty(renderToStaticMarkup(<Post post={post} />))}
+        {pretty(
+          renderToStaticMarkup(<Post post={post} />)
+            .replace('<header></header>', '')
+            .replace('<footer></footer>')
+        )}
       </SyntaxHighlighter>
     </details>
   </div>

@@ -778,6 +778,29 @@ pre tt:after {
   }
 }
 
+.post-preview {
+  display: block;
+  margin-bottom: 3em;
+  padding: 1em;
+  padding-bottom: 3em;
+  border-bottom: 1px solid #444;
+}
+
+.post-preview:target {
+  box-shadow: 0 0 2em skyblue;
+}
+
+.post-preview__title {
+  text-transform: capitalize;
+}
+
+.post-preview__title a {
+  text-decoration: none;
+  font-size: 0.3em;
+  opacity: 0.4;
+  vertical-align: middle;
+}
+
 .post-preview > details {
   margin-bottom: 0.8em;
 }
@@ -938,7 +961,7 @@ pre tt:after {
   position: relative;
   width: 3em;
   height: 3em;
-  margin: .2em .2em .2em 0;
+  margin: 0.2em 0.2em 0.2em 0;
 }
 
 .rendered-post .p-like .u-photo,
