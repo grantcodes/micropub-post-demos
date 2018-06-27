@@ -8,10 +8,10 @@ import Post from '../components/post/index'
 // import jf2ToMf2 from '../modules/jf2-to-mf2'
 
 const PostPreview = ({ post, title }) => (
-  <div id={title} className="post-preview">
+  <div id={title.replace(' ', '-')} className="post-preview">
     {title && (
       <h2 className="post-preview__title">
-        <a href={'#' + title}>🔗</a> {title}
+        <a href={'#' + title.replace(' ', '-')}>🔗</a> {title}
       </h2>
     )}
     <details open>
@@ -46,7 +46,7 @@ const PostPreview = ({ post, title }) => (
         {pretty(
           renderToStaticMarkup(<Post post={post} />)
             .replace('<header></header>', '')
-            .replace('<footer></footer>')
+            .replace('<footer></footer>', '')
         )}
       </SyntaxHighlighter>
     </details>

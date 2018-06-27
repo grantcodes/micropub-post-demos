@@ -21,6 +21,15 @@ const Layout = ({ children, data }) => (
       }}
     >
       {children()}
+
+      <footer>
+        <h4>Feeds</h4>
+        <ul>
+          <li>
+            <a href="/feeds/hfeed">h-feed</a>
+          </li>
+        </ul>
+      </footer>
     </div>
   </div>
 )
