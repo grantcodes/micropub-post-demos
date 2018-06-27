@@ -85,3 +85,18 @@ exports.sourceNodes = async ({ boundActionCreators }) => {
 
   return
 }
+
+// Make sure feed pages dont have a layout
+exports.onCreatePage = async ({ page, boundActionCreators }) => {
+  const { createPage } = boundActionCreators
+
+  return new Promise((resolve, reject) => {
+    if (page.path.startsWith('/feeds/')) {
+      page.layout = 'Feed'
+      // Update the page.
+      createPage(page)
+    }
+
+    resolve()
+  })
+}
