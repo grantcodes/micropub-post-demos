@@ -26,12 +26,12 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>{' '}
-        <Link
-          to="https://github.com/grantcodes/micropub-post-demos"
+        <a
+          href="https://github.com/grantcodes/micropub-post-demos"
           style={{ fontSize: '.5em', color: 'ghostwhite' }}
         >
           Contribute on Github
-        </Link>
+        </a>
       </h1>
     </div>
   </div>
