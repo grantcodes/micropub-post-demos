@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: system-ui;
   font-style: normal;
@@ -820,12 +826,12 @@ pre tt:after {
   content: '➕';
   color: #fff;
   font-size: 0.9em;
-  line-height: 1em;
+  line-height: 2em;
   display: inline-block;
   width: 2em;
   height: 2em;
   font-weight: bold;
-  padding: 0.5em 0;
+  padding: 0;
   margin-right: 0.7em;
   text-align: center;
   vertical-align: middle;
