@@ -28,6 +28,9 @@ const Layout = ({ children, data }) => (
           <li>
             <a href="/feeds/hfeed">h-feed</a>
           </li>
+          <li>
+            <a href="/feeds/allposts.json">All Posts JSON</a>
+          </li>
         </ul>
       </footer>
     </div>

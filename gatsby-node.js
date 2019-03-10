@@ -2,6 +2,8 @@ const fs = require('fs')
 const axios = require('axios')
 const crypto = require('crypto')
 
+let posts = []
+
 exports.sourceNodes = async ({ boundActionCreators }) => {
   const { createNode } = boundActionCreators
 
@@ -40,8 +42,6 @@ exports.sourceNodes = async ({ boundActionCreators }) => {
   // })
 
   // await for results
-  const posts = []
-
   const files = fs.readdirSync(__dirname + '/src/posts')
   files.forEach(filename => {
     const contents = fs.readFileSync(`${__dirname}/src/posts/${filename}`)
@@ -92,11 +92,30 @@ exports.onCreatePage = async ({ page, boundActionCreators }) => {
 
   return new Promise((resolve, reject) => {
     if (page.path.startsWith('/feeds/')) {
-      page.layout = 'Feed'
-      // Update the page.
-      createPage(page)
+      if (!page.path.includes('json')) {
+        page.layout = 'Feed'
+        createPage(page)
+      }
     }
 
     resolve()
   })
+}
+
+exports.onPostBuild = async () => {
+  // Create a json file with all posts
+  fs.writeFile(
+    __dirname + '/public/feeds/allposts.json',
+    JSON.stringify(
+      posts.map(post => ({ name: post.name, post: JSON.parse(post.json) }))
+    ),
+    'utf8',
+    err => {
+      if (err) {
+        console.log('An error occured while writing JSON Object to File.')
+        return console.log(err)
+      }
+      console.log('JSON file has been saved.')
+    }
+  )
 }
