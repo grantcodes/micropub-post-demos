@@ -4,6 +4,7 @@ import Author from './author'
 import Comment from './comment'
 import Face from './face'
 import Rsvp from './Rsvp'
+import { URL } from 'url'
 
 const Post = ({ post, className }) => {
   const property = (name, El) => {
