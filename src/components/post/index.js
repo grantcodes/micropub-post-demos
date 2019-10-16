@@ -4,7 +4,6 @@ import Author from './author'
 import Comment from './comment'
 import Face from './face'
 import Rsvp from './Rsvp'
-import { URL } from 'url'
 
 const Post = ({ post, className }) => {
   const property = (name, El) => {
@@ -68,7 +67,7 @@ const Post = ({ post, className }) => {
         ({ value }) =>
           typeof value == 'string' && (
             <a className="u-like-of" href={value}>
-              Like of {new URL(value).hostname}
+              Like of {value}
             </a>
           )
       )}
@@ -77,7 +76,7 @@ const Post = ({ post, className }) => {
         ({ value }) =>
           typeof value == 'string' && (
             <a className="u-bookmark-of" href={value}>
-              Bookmark of {new URL(value).hostname}
+              Bookmark of {value}
             </a>
           )
       )}
@@ -86,7 +85,7 @@ const Post = ({ post, className }) => {
         ({ value }) =>
           typeof value == 'string' && (
             <a className="u-repost-of" href={value}>
-              Repost of {new URL(value).hostname}
+              Repost of {value}
             </a>
           )
       )}
@@ -96,7 +95,7 @@ const Post = ({ post, className }) => {
           ({ value }) =>
             typeof value == 'string' && (
               <a className="u-in-reply-to" href={value}>
-                Replied to {new URL(value).hostname}
+                Replied to {value}
               </a>
             )
         )}
