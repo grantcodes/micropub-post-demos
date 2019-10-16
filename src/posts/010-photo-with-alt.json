@@ -1,0 +1,12 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "content": ["Checkout my photo"],
+    "photo": [
+      {
+        "value": "https://placeimg.com/500/300",
+        "alt": "The alt text for this photo"
+      }
+    ]
+  }
+}

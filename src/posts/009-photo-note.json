@@ -1,0 +1,7 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "content": ["Checkout my photo"],
+    "photo": ["https://placeimg.com/500/300"]
+  }
+}

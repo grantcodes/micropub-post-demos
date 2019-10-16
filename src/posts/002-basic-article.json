@@ -4,8 +4,10 @@
     "name": ["This is an article"],
     "content": [
       {
-        "html": "<p>With <code>HTML</code> content :)</p>",
-        "value": "With HTML content"
+        "html":
+          "<p>With <code>HTML</code> content :)</p><p>You can include images inside the content if it makes sense</p><img src=\"https://placeimg.com/400/300\" />",
+        "value":
+          "With HTML content :) \n\nYou can include images inside the content if it makes sense"
       }
     ]
   }

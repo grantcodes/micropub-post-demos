@@ -878,8 +878,8 @@ pre tt:after {
 
 /* Certain elements should be moved up to remove top padding */
 .rendered-post header > .u-featured:first-child,
-.rendered-post header:empty + .u-video,
-.rendered-post header:empty + .u-photo {
+.rendered-post .u-video:first-child,
+.rendered-post .u-photo:first-child {
   margin-top: -1rem;
 }
 
@@ -895,7 +895,7 @@ pre tt:after {
 .rendered-post .e-content {
   margin: 1rem 0 0 0;
 }
-.rendered-post header:empty + .e-content {
+.rendered-post .e-content:first-child {
   margin-top: 0;
 }
 .rendered-post .e-content p:last-child {
@@ -904,6 +904,15 @@ pre tt:after {
 
 .rendered-post .u-audio {
   width: 100%;
+}
+
+/* Space above likes & replies etc */
+.rendered-post * + .u-in-reply-to,
+.rendered-post * + .u-like-of,
+.rendered-post * + .u-bookmark-of,
+.rendered-post * + .u-repost-of {
+  display: inline-block;
+  margin-top: 0.5rem;
 }
 
 .rendered-post footer {

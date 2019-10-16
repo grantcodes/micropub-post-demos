@@ -3,6 +3,7 @@ import PostContent from './post-content'
 import Author from './author'
 import Comment from './comment'
 import Face from './face'
+import Rsvp from './Rsvp'
 
 const Post = ({ post, className }) => {
   const property = (name, El) => {
@@ -24,22 +25,24 @@ const Post = ({ post, className }) => {
 
   return (
     <article className={postClasses.join(' ')}>
-      <header>
-        {property(
-          'featured',
-          ({ value }) =>
-            typeof value == 'string' && (
-              <img className="u-featured" src={value} />
-            )
-        )}
-        {property('name', ({ value }) => <h1 className="p-name">{value}</h1>)}
-      </header>
+      {post.properties.featured || post.properties.name ? (
+        <header>
+          {property(
+            'featured',
+            ({ value }) =>
+              typeof value == 'string' && (
+                <img className="u-featured" src={value} />
+              )
+          )}
+          {property('name', ({ value }) => <h1 className="p-name">{value}</h1>)}
+        </header>
+      ) : null}
 
-      {property(
-        'photo',
-        ({ value }) =>
-          typeof value == 'string' && <img className="u-photo" src={value} />
-      )}
+      {property('photo', ({ value }) => {
+        const alt = value && value.alt ? value.alt : ''
+        value = value.value ? value.value : value
+        return value ? <img className="u-photo" src={value} alt={alt} /> : null
+      })}
 
       {property(
         'video',
@@ -64,7 +67,7 @@ const Post = ({ post, className }) => {
         ({ value }) =>
           typeof value == 'string' && (
             <a className="u-like-of" href={value}>
-              Like Of
+              Like of {new URL(value).hostname}
             </a>
           )
       )}
@@ -73,7 +76,7 @@ const Post = ({ post, className }) => {
         ({ value }) =>
           typeof value == 'string' && (
             <a className="u-bookmark-of" href={value}>
-              Bookmark Of
+              Bookmark of {new URL(value).hostname}
             </a>
           )
       )}
@@ -82,19 +85,22 @@ const Post = ({ post, className }) => {
         ({ value }) =>
           typeof value == 'string' && (
             <a className="u-repost-of" href={value}>
-              Repost Of
+              Repost of {new URL(value).hostname}
             </a>
           )
       )}
-      {property(
-        'in-reply-to',
-        ({ value }) =>
-          typeof value == 'string' && (
-            <a className="u-in-reply-to" href={value}>
-              Replied To
-            </a>
-          )
-      )}
+      {!post.properties.rsvp &&
+        property(
+          'in-reply-to',
+          ({ value }) =>
+            typeof value == 'string' && (
+              <a className="u-in-reply-to" href={value}>
+                Replied to {new URL(value).hostname}
+              </a>
+            )
+        )}
+
+      <Rsvp properties={post.properties} />
 
       <footer>
         {property('author', ({ value }) => <Author author={value} />)}

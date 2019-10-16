@@ -1,0 +1,11 @@
+{
+  "type": ["h-entry"],
+  "properties": {
+    "content": ["Checkout these multiple photos that should be related"],
+    "photo": [
+      "https://placeimg.com/300/100/animals",
+      "https://placeimg.com/300/100/arch",
+      "https://placeimg.com/300/100/nature"
+    ]
+  }
+}
